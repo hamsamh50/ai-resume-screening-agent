@@ -377,7 +377,7 @@ This project is intended to assist recruiters with initial resume screening. It 
 
 **Hamsa M H**
 
-BE  Computer Science and Engineering
+BE  Computer Science and Engineering
 
 GitHub: https://github.com/hamsamh50
 
