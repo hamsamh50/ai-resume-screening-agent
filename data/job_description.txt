@@ -1,0 +1,31 @@
+Python Full Stack Developer
+
+Job Description:
+
+We are looking for a Python Full Stack Developer who can develop
+and maintain web applications.
+
+Required Skills:
+Python
+Django
+Django REST Framework
+REST API
+SQL
+HTML
+CSS
+JavaScript
+Git
+
+Education:
+BE/BTech in Computer Science or related field.
+
+Experience:
+0-2 years of experience.
+Freshers are welcome.
+
+Responsibilities:
+- Develop web applications using Python and Django.
+- Build REST APIs.
+- Work with SQL databases.
+- Write clean and maintainable code.
+- Use Git for version control.

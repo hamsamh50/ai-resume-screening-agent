@@ -1,0 +1,35 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE
+.vscode/
+.idea/
+
+# Streamlit
+.streamlit/
+
+# Generated reports
+output/
+
+# Resume data - contains personal information
+data/resumes/
+data/uploaded_resumes/
+
+# Generated screening output
+output/
+
+# Uploaded resumes
+resumes/
+
+# OS files
+.DS_Store
+Thumbs.db
