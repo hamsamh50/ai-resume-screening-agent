@@ -1,8 +1,8 @@
-# ?? AI Resume Screening Agent
+#  AI Resume Screening Agent
 
 An AI-powered resume screening system that automatically analyzes candidate resumes against a job description, matches required skills, calculates NLP similarity, evaluates eligibility, ranks candidates, and generates recruitment recommendations.
 
-## ?? Overview
+##  Overview
 
 Recruiters often need to manually review a large number of resumes for a single job opening. This project automates the initial screening process.
 
@@ -26,16 +26,16 @@ It then:
 11. Generates JSON and CSV reports
 12. Displays results through a Streamlit dashboard
 
-## ? Features
+##  Features
 
-### ?? Resume Processing
+###  Resume Processing
 
 * PDF resume text extraction
 * Multiple resume upload
 * Resume preview
 * Automatic candidate analysis
 
-### ??? Skill Matching
+###  Skill Matching
 
 The system identifies technical skills from resumes and compares them with the required skills in the job description.
 
@@ -53,7 +53,7 @@ Example:
 | Django REST Framework | ?         |
 | Git                   | ?         |
 
-### ?? NLP Analysis
+###  NLP Analysis
 
 The system uses:
 
@@ -63,14 +63,14 @@ The system uses:
 
 This provides a text-based similarity score between the job description and candidate resume.
 
-### ?? Eligibility Analysis
+###  Eligibility Analysis
 
 The system evaluates:
 
 * Education requirements
 * Experience requirements
 
-### ?? Candidate Scoring
+###  Candidate Scoring
 
 The final candidate score is calculated using weighted components:
 
@@ -81,7 +81,7 @@ The final candidate score is calculated using weighted components:
 | Education      |    10% |
 | Experience     |     5% |
 
-### ?? Candidate Ranking
+###  Candidate Ranking
 
 Candidates are ranked according to their final screening score.
 
@@ -93,7 +93,7 @@ Score >= 30   ? REVIEW
 Score < 30    ? REJECT
 ```
 
-### ?? Streamlit Dashboard
+###  Streamlit Dashboard
 
 The interactive dashboard provides:
 
@@ -109,83 +109,83 @@ The interactive dashboard provides:
 * Screening explanation
 * CSV/JSON export
 
-## ??? System Architecture
+##  System Architecture
 
 ```text
                     +---------------------+
-                    ¦   Job Description   ¦
+                    Â¦   Job Description   Â¦
                     +---------------------+
-                               ¦
+                               Â¦
                                ?
                     +---------------------+
-                    ¦ Required Skill      ¦
-                    ¦ Extraction          ¦
+                    Â¦ Required Skill      Â¦
+                    Â¦ Extraction          Â¦
                     +---------------------+
-                               ¦
-                               ¦
-+-----------------+            ¦
-¦ Candidate PDFs  ¦            ¦
-+-----------------+            ¦
-         ¦                     ¦
-         ?                     ¦
-+-----------------+            ¦
-¦ PDF Text        ¦            ¦
-¦ Extraction      ¦            ¦
-+-----------------+            ¦
-         ¦                     ¦
+                               Â¦
+                               Â¦
++-----------------+            Â¦
+Â¦ Candidate PDFs  Â¦            Â¦
++-----------------+            Â¦
+         Â¦                     Â¦
+         ?                     Â¦
++-----------------+            Â¦
+Â¦ PDF Text        Â¦            Â¦
+Â¦ Extraction      Â¦            Â¦
++-----------------+            Â¦
+         Â¦                     Â¦
          ?                     ?
 +------------------------------------+
-¦        Resume Screening Pipeline   ¦
-+------------------------------------¦
-¦ Skill Matching                     ¦
-¦ NLP Similarity                     ¦
-¦ Education Eligibility              ¦
-¦ Experience Eligibility             ¦
+Â¦        Resume Screening Pipeline   Â¦
++------------------------------------Â¦
+Â¦ Skill Matching                     Â¦
+Â¦ NLP Similarity                     Â¦
+Â¦ Education Eligibility              Â¦
+Â¦ Experience Eligibility             Â¦
 +------------------------------------+
-                   ¦
+                   Â¦
                    ?
           +------------------+
-          ¦ Weighted Scoring ¦
+          Â¦ Weighted Scoring Â¦
           +------------------+
-                   ¦
+                   Â¦
                    ?
           +------------------+
-          ¦ Candidate Ranking¦
+          Â¦ Candidate RankingÂ¦
           +------------------+
-                   ¦
+                   Â¦
           +-----------------+
           ?                 ?
     +------------+    +--------------+
-    ¦ Streamlit  ¦    ¦ JSON / CSV   ¦
-    ¦ Dashboard  ¦    ¦ Reports      ¦
+    Â¦ Streamlit  Â¦    Â¦ JSON / CSV   Â¦
+    Â¦ Dashboard  Â¦    Â¦ Reports      Â¦
     +------------+    +--------------+
 ```
 
-## ?? Project Structure
+##  Project Structure
 
 ```text
 ai-resume-screening-agent/
-¦
+Â¦
 +-- dashboard/
-¦   +-- app.py
-¦
+Â¦   +-- app.py
+Â¦
 +-- data/
-¦   +-- job_description.txt
-¦
+Â¦   +-- job_description.txt
+Â¦
 +-- src/
-¦   +-- __init__.py
-¦   +-- agent.py
-¦   +-- eligibility.py
-¦   +-- extractor.py
-¦   +-- main.py
-¦   +-- matcher.py
-¦   +-- parser.py
-¦   +-- pipeline.py
-¦   +-- ranker.py
-¦   +-- recommender.py
-¦   +-- reporter.py
-¦   +-- scorer.py
-¦
+Â¦   +-- __init__.py
+Â¦   +-- agent.py
+Â¦   +-- eligibility.py
+Â¦   +-- extractor.py
+Â¦   +-- main.py
+Â¦   +-- matcher.py
+Â¦   +-- parser.py
+Â¦   +-- pipeline.py
+Â¦   +-- ranker.py
+Â¦   +-- recommender.py
+Â¦   +-- reporter.py
+Â¦   +-- scorer.py
+Â¦
 +-- .gitignore
 +-- README.md
 +-- requirements.txt
@@ -193,7 +193,7 @@ ai-resume-screening-agent/
 
 > Candidate resumes, generated reports, virtual environments, and environment files are excluded from the Git repository for privacy and security.
 
-## ??? Technologies Used
+## Technologies Used
 
 * **Python**
 * **Streamlit**
@@ -206,7 +206,7 @@ ai-resume-screening-agent/
 * **Regular Expressions**
 * **Git & GitHub**
 
-## ?? Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -235,7 +235,7 @@ venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## ?? Running the Application
+##  Running the Application
 
 ### Command-Line Pipeline
 
@@ -262,7 +262,7 @@ streamlit run dashboard/app.py
 
 Then open the local Streamlit URL shown in the terminal.
 
-## ?? Example Screening Result
+## Example Screening Result
 
 Example output:
 
@@ -282,7 +282,7 @@ Resume_Hamsa.pdf ? REVIEW
 hresume.pdf      ? REJECT
 ```
 
-## ?? Screening Explanation
+##  Screening Explanation
 
 For every candidate, the system provides an explanation containing:
 
@@ -309,7 +309,7 @@ Review the candidate's resume and verify the missing
 requirements during the technical interview.
 ```
 
-## ?? Reports
+##  Reports
 
 The system generates:
 
@@ -329,7 +329,7 @@ ranked_candidates.csv
 
 Contains ranked candidates and their screening scores.
 
-## ?? Privacy
+##  Privacy
 
 Candidate resumes may contain personal information such as:
 
@@ -341,7 +341,7 @@ Candidate resumes may contain personal information such as:
 
 Therefore, uploaded resumes and generated output files are excluded from the Git repository using `.gitignore`.
 
-## ?? Future Improvements
+##  Future Improvements
 
 Potential improvements include:
 
@@ -358,7 +358,7 @@ Potential improvements include:
 * Cloud deployment
 * Candidate comparison dashboard
 
-## ?? Use Cases
+##  Use Cases
 
 This system can be used for:
 
@@ -369,18 +369,18 @@ This system can be used for:
 * Technical candidate ranking
 * Automated recruitment assistance
 
-## ?? Disclaimer
+##  Disclaimer
 
 This project is intended to assist recruiters with initial resume screening. It should not be used as the sole basis for employment decisions. Human review should be performed before making recruitment decisions.
 
-## ????? Author
+##  Author
 
 **Hamsa M H**
 
-BE – Computer Science and Engineering
+BE Â– Computer Science and Engineering
 
 GitHub: https://github.com/hamsamh50
 
 ---
 
-? If you find this project useful, consider giving the repository a star!
+ If you find this project useful, consider giving the repository a star!
